@@ -1,0 +1,56 @@
+// 1. Import the Scanner class to read user input from the console
+import java.util.Scanner;
+
+// 2. Define the public class
+public class DecreasingOrderIfElse {
+
+    // 3. Program entry point: main method
+    public static void main(String[] args) {
+        // 4. Create a Scanner object to capture keyboard input
+        Scanner input = new Scanner(System.in);
+        
+        // 5. Prompt the user to enter three numbers
+        System.out.print("Enter three numbers: ");
+        // 6. Read three double values from the user
+        double num1 = input.nextDouble();
+        double num2 = input.nextDouble();
+        double num3 = input.nextDouble();
+        
+        // 7. Call the static method to display the three numbers in decreasing order
+        displayDecreasingOrder(num1, num2, num3);
+        
+        // 8. Close the Scanner to release resources
+        input.close();
+    }
+
+    // 9. Method definition: accepts three double parameters (a, b, c) and returns nothing (void)
+    public static void displayDecreasingOrder(double a, double b, double c) {
+        // 10. Case 1: 'a' is the largest number (greater than or equal to both 'b' and 'c')
+        if (a >= b && a >= c) {
+            // 11. Compare the remaining two numbers ('b' and 'c') to determine second and third place
+            if (b >= c) {
+                System.out.println("Decreasing order: " + a + " " + b + " " + c);
+            } else {
+                System.out.println("Decreasing order: " + a + " " + c + " " + b);
+            }
+        } 
+        // 12. Case 2: 'b' is the largest number (greater than or equal to both 'a' and 'c')
+        else if (b >= a && b >= c) {
+            // 13. Compare the remaining two numbers ('a' and 'c')
+            if (a >= c) {
+                System.out.println("Decreasing order: " + b + " " + a + " " + c);
+            } else {
+                System.out.println("Decreasing order: " + b + " " + c + " " + a);
+            }
+        } 
+        // 14. Case 3: 'c' must be the largest number
+        else {
+            // 15. Compare the remaining two numbers ('a' and 'b')
+            if (a >= b) {
+                System.out.println("Decreasing order: " + c + " " + a + " " + b);
+            } else {
+                System.out.println("Decreasing order: " + c + " " + b + " " + a);
+            }
+        }
+    }
+}
