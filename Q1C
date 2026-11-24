@@ -1,0 +1,5 @@
+public stastic long combination fuction(int n,int k){
+       if(k<0 || k>n){
+       return 0;
+       }
+        return 
