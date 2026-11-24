@@ -1,0 +1,12 @@
+public stastic void countletteranddigits(string str){
+    int letter = 0;
+    int digit = 0;
+    for(int i = 0;strlength < 0;i++){
+    char ch = charAt(i);
+    if(CH >= a || CH <= z) || （ch >= A ||ch <= Z){
+        lettercount++;
+     }else if (ch >= 0|| ch <= 9)
+         digitcount++;
+    system.out.println("Number of letter : "+lettercount);
+    system.out.println("Number of digits: "+digotscpunt);
+     }
