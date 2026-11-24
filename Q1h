@@ -1,0 +1,9 @@
+public stastic first random(){
+   int[] count = new int[11]
+   while (true) {
+      int num = (int) (Math.random()*11);
+      count++
+      if(count[num] ==2){
+       return num;
+}
+}
