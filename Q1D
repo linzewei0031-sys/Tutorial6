@@ -1,0 +1,7 @@
+pulbic stastic boolean  pentagonal number(int n )
+     if (n < 0){
+     return flase
+     for(int i=0;n*(3*n-1) / 2 <= num;i==)
+     int pn = n*(3*n-1) / 2
+     if (pn == num)
+      return true
