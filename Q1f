@@ -1,0 +1,8 @@
+import java.util.random;
+public class random number
+public stastic void main random(int[] number){
+    random rand = new Random()
+    for(i=0；i < 10； i++) {
+    number[i] = int mathrandom() * 101); 
+     }  
+}
