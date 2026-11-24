@@ -1,0 +1,10 @@
+import java.util.scanner
+public class radius
+public stastic void main(string[]arg){
+scanner keyboard = new scanner()
+system.out.println ("Enter the radius")；
+double area = Math.PI * radius * radius；
+double circumference = 2 * MathPI * radius；
+system.out.println("Area: %.2f\n, area);
+system.our.println(“circumference: %.2f\n,circumference);
+}
